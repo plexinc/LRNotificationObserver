@@ -321,6 +321,11 @@ static SEL sNotificationFiredAction;
 
 - (void)stopObserving
 {
+    if (_name == nil)
+    {
+        return;
+    }
+
     [_notificationCenter removeObserver:self name:_name object:_object];
     [self clear];
 }
