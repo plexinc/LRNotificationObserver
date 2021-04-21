@@ -12,7 +12,6 @@ let package = Package(
     targets: [
         .target(
             name: "LRNotificationObserver",
-            path: "LRNotificationObserver",
-            publicHeadersPath: ""),
+            path: "LRNotificationObserver"),
     ]
 )
